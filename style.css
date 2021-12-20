@@ -1,0 +1,181 @@
+body {
+    background: lightgray;
+    font-family: sans-serif;
+    color: darkgray;
+}
+
+header {
+    background: rgb(109, 109, 62);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 3rem;
+    width: auto;
+    margin: 1rem auto;
+}
+
+.search-container {
+    width: auto;
+    height: 3rem;
+}
+
+
+/* The point of this tutorial is here */
+
+.form {
+    display: flex;
+    flex-direction: row;
+}
+
+.search-field {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    outline: none;
+}
+
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -33px;
+}
+
+.search-button img {
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+}
+
+main {
+    background: red;
+    height: 30rem;
+}
+
+.hero-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.hero-text {
+    color: white;
+    text-align: center;
+    width: 30%;
+}
+
+.hero-text h1 {
+    text-transform: uppercase;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: white;
+    color: black;
+    width: 100%;
+}
+
+.img-block {
+    display: flex;
+    justify-content: center;
+}
+
+.img-block-round {
+    width: 6rem;
+    height: auto;
+    margin: 1rem;
+}
+
+.main-text {
+    text-align: center;
+    color: black;
+}
+
+.main-text h3 {
+    color: darkgray;
+}
+
+.profiles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile-img {
+    width: 8rem;
+    height: auto;
+}
+
+.p-profile {
+    color: black;
+}
+
+footer {
+    background: rgb(109, 109, 62);
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.foot-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.p-foot {
+    margin: 0;
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: darkgray;
+}
+
+@media only screen and (min-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .img-block {
+        display: flex;
+        align-items: space-between;
+    }
+    .img-block-round {
+        margin: 1rem 3rem;
+    }
+    .profiles {
+        display: inline;
+    }
+    .profile {
+        display: inline-flex;
+        align-items: center;
+        align-content: center;
+    }
+    footer {
+        background: rgb(109, 109, 62);
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: space-around;
+        padding-bottom: 2rem;
+    }
+    .foot-block {
+        margin: 0 4rem;
+    }
+}
